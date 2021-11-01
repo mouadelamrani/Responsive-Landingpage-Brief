@@ -1,4 +1,10 @@
 html{
     font-family: 'Merriweather', serif;
     font-size: 10px;
+    background-image: url(https://www.ethnicmusical.com/wp-content/uploads/2020/08/background-pattern2.png);
+}
+
+
+body{
+    background: yellow;
 }
