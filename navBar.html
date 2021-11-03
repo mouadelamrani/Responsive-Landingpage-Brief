@@ -10,14 +10,171 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
     <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 
     <style>
+        *, html, body{
+            font-family: 'Merriweather', serif;
+            font-size: 10px;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Start NavBar */
+         .NavBar{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 10rem;
+            /* padding: 0rem 10rem; */
+            background: rgb(222, 240, 222);
+            position: fixed;
+        }
+        .NavBar img{
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .NavBar ul{
+            display: flex;
+            align-items: center;
+        }
+
+        .NavBar ul li{
+            list-style: none;
+        }
+
+        .NavBar ul li a{
+            display: block;
+            text-decoration: none;
+            font-size: 2rem;
+            color: indigo;
+            padding: 3.7rem 1.5rem;
+        }
+        .NavBar ul li a:hover{
+            background: red;
+            color: ivory;
+        }
+        /* End NavBar */
+
+        .MenuContainer {
+            /* position: relative; */
+            display: none;
+        }
+
+        
+/* Media Query Section */
+@media only screen and (max-width: 650px) {
+    .NavBar ul li a{
+            display: none;
+        }
+    .NavBar{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 8rem;
+            /* padding: 0rem 10rem; */
+            background: rgb(222, 240, 222);
+            position: fixed;
+        }
+    .NavBar img{
+            height: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+    
+
+        /* Menu */
+        .MenuContainer {
+            /* position: relative; */
+            display: inline-block;
+        }
+
+        .Menu {
+            /* background-color: #04AA6D; */
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            position: relative;
+            right: 0.7rem;
+        }
+        .MenuIcon{
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .links {
+            display: none;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            left: 0rem;
+            top: 80px;
+            background-color: #f1f1f1;
+            width: 100%;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1;
+        }
+
+        .links a {
+            color: black;
+            padding: 20px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 2rem;
+        }
+
+        .links a:hover {background-color: #ddd;}
+        .MenuContainer:hover .links {display: block;}
+
+        /* End Menu */
+    
+}
+/* Media Query Section */
 
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#"><img src="" alt=""></a>
-    </nav>
+    <header>
+        <!-- Nav Beginning -->
+        <nav class="NavBar">
+
+            <a href=""><img 
+                src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/e83fb332ba202d2cdd4e37a65df66f9ad59b72ed/data/Logo/Final%20Logo.svg" 
+                alt="logo">
+            </a>
+    
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+
+            <div class="MenuContainer">
+                <a class="Menu">
+                    <img 
+                        class="MenuIcon"
+                        src="https://fonts.gstatic.com/s/i/materialicons/menu/v13/24px.svg" 
+                        alt=""></a>
+                <div class="links">
+                  <a href="#">Products</a>
+                  <a href="#">Contact Us</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Cart</a>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Nav Ending -->
+
+    </header>
+
+    
+
 </body>
 </html>
