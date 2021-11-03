@@ -4,146 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .Section{
-            display: flex;
-            flex-flow: row wrap;
-        }
-        
-
-        .DivImg1{
-            display: flex;
-            width: 50%;
-            height: 400px;
-            background: cadetblue;
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-        .DivText1{
-            display: flex;
-            width: 50%;
-            height: 400px;
-            background: cornflowerblue;
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-
-        .Section2{
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-        .DivImg2{
-            display: flex;
-            width: 50%;
-            height: 400px;
-            background: rgb(21, 248, 0);
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-        .DivText2{
-            display: flex;
-            width: 50%;
-            height: 400px;
-            background: rgb(237, 100, 219);
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-        /* -------------------------------------- */
-        /* -------------------------------------- */
-        /* -------------------------------------- */
-        /* -------------------------------------- */
-        /* -------------------------------------- */
-        @media only screen and (max-width: 600px) {
-        .Section{
-            display: flex;
-            flex-flow: column wrap;
-            }
-        .DivImg1{
-            display: flex;
-            width: 100%;
-            height: 400px;
-            background: cadetblue;
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-        .DivText1{
-            display: flex;
-            width: 100%;
-            height: 400px;
-            background: cornflowerblue;
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-        
-
-        .Section2{
-            display: flex;
-            flex-direction: column;
-        }
-        .DivImg2{
-            display: flex;
-            width: 100%;
-            height: 400px;
-            background: rgb(21, 248, 0);
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-
-        .DivText2{
-            display: flex;
-            width: 100%;
-            height: 400px;
-            background: rgb(237, 100, 219);
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-        }
-
-    </style>
 </head>
 <body>
-    <section class="Section">
-        <div class="DivImg1">
-            Div 1
-        </div>
-        
-        <div class="DivText1">
-            Div 2
-        </div>
-    </section>
 
-    <section class="Section2">
-        <div class="DivImg2">
-            Reverse Div 1
-        </div>
+    <!-- Start Nav -->
+        <nav class="NavBar">
+
+            <a href=""><img 
+                src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/e83fb332ba202d2cdd4e37a65df66f9ad59b72ed/data/Logo/Final%20Logo.svg" 
+                alt="logo">
+            </a>
+
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+
+            <div class="MenuContainer">
+                <a class="Menu">
+                    <img 
+                        class="MenuIcon"
+                        src="https://fonts.gstatic.com/s/i/materialicons/menu/v13/24px.svg" 
+                        alt=""></a>
+                <div class="links">
+                <a href="#">Products</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Cart</a>
+                </div>
+            </div>
+
+        </nav>
+    <!-- END Nav -->
+
+
+    <!-- Start Main -->
+            <!-- Section1 -->
+        <section class="Section1">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%201.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                We start making your Oud from here
+            </div>
+        </section>
+
+            <!-- Section2 -->
+        <section class="Section2">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%202.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                We calculate the smalest details..
+            </div>
+        </section>
+
+            <!-- Section3 -->
+        <section class="Section1">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%203.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                Until it looks flawless from the outside, and..
+            </div>
+        </section>
+
+            <!-- Section4 -->
+        <section class="Section2">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%204.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                the inside as well.
+            </div>
+        </section>
+
+            <!-- Section5 -->
+        <section class="Section1">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%205.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                Then we start planing the strings’ holder..
+            </div>
+        </section>
         
-        <div class="DivText2">
-            Reverse Div 2
-        </div>
-    </section>
+            <!-- Section6 -->
+        <section class="Section2">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%206.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                We make sure that the outer design and the woden bone match perfectly..            
+            </div>
+        </section>
+        
+            <!-- Section7 -->
+        <section class="Section1">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%207.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                Then we link the two parts of your oud together as if they are one unit sent from heavens just for you.            
+            </div>
+        </section>
+        
+            <!-- Section8 -->
+        <section class="Section2">
+            <div class="DivImg">
+                <img src="https://raw.githubusercontent.com/mouadelamrani/Responsive-Landingpage-Brief/main/data/Product%20Square/Artboard%208.png" alt="">
+            </div>
+            
+            <div class="DivText">
+                Then we add the strings that produce tones of the golden era.            
+            </div>
+        </section>
+
+    <!-- END Main -->
+
 
 </body>
 </html>
