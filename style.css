@@ -17,6 +17,59 @@
         height: 100vh;
         font-size: 3rem;
     }
+
+    header .fullPageContainer{
+        height: 100%;
+    }
+
+    
+
+    header .LogoContainer{
+        background: khaki;
+        height: 10%;
+    }
+    header .LogoContainer .HeaderLogo{
+        height: 100%;   
+    }
+
+    header .ProductContainer{
+        background: rgb(58, 226, 66);
+        display: flex;
+        flex-direction: row; 
+        height: 80%;       
+    }
+
+    header .ProductContainer .ProductTitle{
+        background: rgb(200, 113, 142);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* I stopped here, i was defining height and position of items */
+
+    header .ProductContainer .Product{
+        background: lavenderblush;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    header .ProductContainer .Product  .ProductImg{
+        height: 100%;
+        width: auto;
+    }
+
+    header .ArrowB{
+        background: lightblue;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 /* header full page */
 
 
@@ -162,7 +215,7 @@
             }
 
             .links {
-                display: block;
+                display: none;
                 align-items: center;
                 text-align: center;
                 position: absolute;
