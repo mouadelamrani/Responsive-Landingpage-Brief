@@ -4,7 +4,21 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    /* scroll-behavior: smooth; */
+    scroll-snap-type: y mandatory;
+
 }
+
+main{
+    scroll-snap-align: start;
+}
+
+section{
+    scroll-snap-align: start;
+
+}
+
+
 
 /* body{ */
     /* background: yellow; */
@@ -16,6 +30,7 @@
         background: red;
         height: 100vh;
         font-size: 3rem;
+        scroll-snap-align: start;
     }
 
     header .fullPageContainer{
@@ -27,6 +42,9 @@
     header .LogoContainer{
         background: khaki;
         height: 10%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
     header .LogoContainer .HeaderLogo{
         height: 100%;   
@@ -64,7 +82,6 @@
         background: transparent;
         border: black solid;
     }
-    /* I stopped here, i was defining height and position of items */
 
     header .ProductContainer .Product{
         background: lavenderblush;
@@ -85,9 +102,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 7px 0;
+    }
+
+    header .ArrowB img{
+        height: 100%;
     }
 
 /* header full page */
+
 
 
 /* Start NavBar  */
@@ -126,12 +149,12 @@
         color: ivory;
     }
 
-    /* Start Main */
+    /* Start Menu */
         .MenuContainer {
             /* position: relative; */
             display: none;
         }
-    /* END Main */
+    /* END Menu */
 
 /* END NavBar  */
 
@@ -141,12 +164,13 @@
     .Section1{
         display: flex;
         flex-flow: row wrap;
+        height: 100vh;
     }
 
 
     .DivImg{
         display: flex;
-        width: 50%;
+        width: 55%;
         height: fit-content;
         background: cadetblue;
         font-size: 4rem;
@@ -159,7 +183,7 @@
 
     .DivText{
         display: flex;
-        width: 50%;
+        width: 45%;
         background: cornflowerblue;
         font-size: 4rem;
         line-height: 3;
@@ -173,6 +197,7 @@
     .Section2{
         display: flex;
         flex-direction: row-reverse;
+        height: 100vh;
     }
 
 /* END Main */
@@ -187,6 +212,48 @@
 /* Media Query Start */
 
 @media only screen and (max-width: 900px) {
+
+    /* Full Page */
+
+    header .ProductContainer{
+        background: rgb(58, 226, 66);
+        display: flex;
+        flex-direction: column-reverse; 
+        height: 80%;
+        padding: 0;  
+    }
+
+    header .ProductContainer .ProductTitle{
+        background: rgb(224, 86, 132);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+    }
+
+    header .ProductContainer .ProductTitle h1{
+        font-size: 20px;
+        margin: 0;
+        padding: 0 0 1em 0;
+    }
+
+    button{
+        font-size: 18px;
+        padding: 0.5em 3em;
+        border-radius: 8px;
+        background: transparent;
+        border: black solid;
+    }
+
+    header .ProductContainer .Product{
+        background: rgb(211, 158, 175);
+        width: 100%;
+        height: 70%;
+    }
+    /* Full Page */
 
     /* NavBar */
         .NavBar ul li a{
@@ -264,34 +331,77 @@
 
 
     /* Main */
-        .Section{
-            display: flex;
-            flex-flow: column wrap;
-            }
+    /* .Section1{
+        display: flex;
+        flex-flow: row wrap;
+        height: 100vh;
+    }
 
 
-        .Section2{
+    .DivImg{
+        display: flex;
+        width: 60%;
+        height: fit-content;
+        background: cadetblue;
+        font-size: 4rem;
+        align-items: center; 
+        justify-content: center;
+    }
+    img{
+        width: 100%;
+    }
+
+    .DivText{
+        display: flex;
+        width: 40%;
+        background: cornflowerblue;
+        font-size: 4rem;
+        line-height: 3;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+
+    .Section2{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+    } */
+
+    /* main web */
+
+
+       .Section1, .Section2{
             display: flex;
-            flex-direction: column;
+            flex-flow: column nowrap;
+            height: 100vh;
         }
+
         .DivImg{
             display: flex;
-            width: 100%;
             height: fit-content;
             background: rgb(21, 248, 0);
-            font-size: 4rem;
             align-items: center; 
             justify-content: center;
+            /* height: 60%; */
+            width: 100%;
+        }
+
+        img{
+            height: 100%;
         }
 
         .DivText{
             display: flex;
-            width: 100%;
-            padding: 150px 20px;
+            /* padding: 150px 20px; */
             background: rgb(230, 129, 214);
-            font-size: 3rem;
+            font-size: 2rem;
             align-items: center; 
             justify-content: center;
+            flex: 1 1 auto;
+            width: 100%;
         }
     /* Main */
 }
