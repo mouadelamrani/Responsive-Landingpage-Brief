@@ -11,11 +11,15 @@
 
 main{
     scroll-snap-align: start;
+    background: #F8EEE6;
 }
 
 section{
     scroll-snap-align: start;
-
+    background: #F8EEE6;
+}
+footer{
+    scroll-snap-align: start;
 }
 
 
@@ -27,7 +31,7 @@ section{
 
 /* header full page - I should complete the full page */
     header{
-        background: red;
+        /* background: red; */
         height: 100vh;
         font-size: 3rem;
         scroll-snap-align: start;
@@ -37,10 +41,8 @@ section{
         height: 100%;
     }
 
-    
-
     header .LogoContainer{
-        background: khaki;
+        /* background: khaki; */
         height: 10%;
         display: flex;
         align-content: center;
@@ -51,7 +53,7 @@ section{
     }
 
     header .ProductContainer{
-        background: rgb(58, 226, 66);
+        /* background: rgb(58, 226, 66); */
         display: flex;
         flex-direction: row; 
         height: 80%;
@@ -59,7 +61,7 @@ section{
     }
 
     header .ProductContainer .ProductTitle{
-        background: rgb(200, 113, 142);
+        /* background: rgb(200, 113, 142); */
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -69,10 +71,11 @@ section{
     }
 
     header .ProductContainer .ProductTitle h1{
-        font-size: 40px;
+        font-size: 35px;
         line-height: 2;
         margin: 0;
         padding: 0 0 1em 0;
+        color: #403027;
     }
 
     button{
@@ -80,11 +83,14 @@ section{
         padding: 0.5em 3em;
         border-radius: 8px;
         background: transparent;
-        border: black solid;
+        border: #403027 solid;
+        color: #403027;
+        font-weight: 700;
+        cursor: pointer;
     }
 
     header .ProductContainer .Product{
-        background: lavenderblush;
+        /* background: lavenderblush; */
         width: 50%;
         display: flex;
         justify-content: center;
@@ -97,7 +103,7 @@ section{
     }
 
     header .ArrowB{
-        background: lightblue;
+        /* background: lightblue; */
         height: 10%;
         display: flex;
         align-items: center;
@@ -120,7 +126,7 @@ section{
         width: 100%;
         height: 10rem;
         padding: 0rem 2rem;
-        background: rgb(222, 240, 222);
+        background: #F8EEE6;
         position: sticky;
     }
     .NavBar img{
@@ -141,12 +147,13 @@ section{
         display: block;
         text-decoration: none;
         font-size: 2rem;
-        color: indigo;
+        color: #403027;
         padding: 3.7rem 1.5rem;
     }
     .NavBar ul li a:hover{
-        background: red;
-        color: ivory;
+        background: #f1d4bb;
+        color: #403027;
+        font-weight: 700;
     }
 
     /* Start Menu */
@@ -172,8 +179,8 @@ section{
         display: flex;
         width: 50%;
         /* height: fit-content; */
-        background: cadetblue;
-        font-size: 4rem;
+        /* background: cadetblue; */
+        /* font-size: 4rem; */
         align-items: center; 
         justify-content: center;
 
@@ -194,13 +201,14 @@ section{
     .DivText{
         display: flex;
         width: 50%;
-        background: cornflowerblue;
+        /* background: cornflowerblue; */
         font-size: 3rem;
         line-height: 3;
         align-items: center; 
         justify-content: center;
         text-align: center;
         padding: 0 40px;
+        color: #403027;
         /* test */
         /* flex-basis: 12rem; */
         /* flex-grow: 1; */
@@ -217,7 +225,90 @@ section{
         height: 100vh;
     }
 
+    /* .CTA{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: rgb(165, 177, 100);
+        line-height: 3;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+    } */
+    
+
 /* END Main */
+
+/* Start Footer */
+    footer{
+        height: 100vh;
+        width: 100%;
+        background: #403027;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    footer > p{
+        font-size: 3rem;
+        text-align: center;
+        padding: 0 30%;
+        margin: 0;
+        line-height: 2;
+        color: #F8EEE6;
+    }
+    .CTAForm{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        /* align-items: center; */
+        width: 100%;
+        padding: 0 30%;
+    }
+    .CTAForm input{
+        margin: 0px 0px;
+        border-radius: 0px;
+        border-color: #403027;
+        background-color: #403027;
+        width: 100%;
+        height: 57px;
+        padding: 12px 15px;
+        /* display: inline-block; */
+        border: 4px solid #F8EEE6;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .CTAForm ::placeholder{
+        font-family: 'Merriweather', serif;
+        font-size: 1.4rem;
+        font-weight: lighter;
+        font-family: sans-serif;
+        font-style: italic;
+        color: #f8eee69a;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+
+    .CTAForm button{
+        /* float: right; */
+        height: 60px;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        border: none;
+        border-radius: 0px;
+        background-color: #F8EEE6;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #403027;
+        letter-spacing: 2px;
+    }
+   
+/* END Footer */
 
         
         
@@ -233,7 +324,7 @@ section{
     /* Full Page */
 
     header .ProductContainer{
-        background: rgb(58, 226, 66);
+        /* background: rgb(58, 226, 66); */
         display: flex;
         flex-direction: column-reverse; 
         height: 80%;
@@ -241,7 +332,7 @@ section{
     }
 
     header .ProductContainer .ProductTitle{
-        background: rgb(224, 86, 132);
+        /* background: rgb(224, 86, 132); */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -254,7 +345,7 @@ section{
     header .ProductContainer .ProductTitle h1{
         font-size: 20px;
         margin: 0;
-        padding: 0 0 1em 0;
+        padding: 0 0 0 0;
     }
 
     button{
@@ -262,11 +353,13 @@ section{
         padding: 0.5em 3em;
         border-radius: 8px;
         background: transparent;
-        border: black solid;
+        border: #403027 solid;
+        color: #403027;
+        font-weight: 700;
     }
 
     header .ProductContainer .Product{
-        background: rgb(211, 158, 175);
+        /* background: rgb(211, 158, 175); */
         width: 100%;
         height: 70%;
     }
@@ -283,7 +376,7 @@ section{
             width: 100%;
             height: 8rem;
             padding: 1rem 1rem;
-            background: rgb(222, 240, 222);
+            background: #F9EBDE;
             position: sticky;
         }
 
@@ -302,8 +395,8 @@ section{
 
             .Menu {
                 /* background-color: #04AA6D; */
-                color: white;
-                padding: 16px;
+                /* color: red; */
+                /* padding: 16px; */
                 font-size: 16px;
                 border: none;
                 position: relative;
@@ -322,14 +415,14 @@ section{
                 position: absolute;
                 left: 0rem;
                 top: 8rem;
-                background-color: #f1f1f1;
+                background-color: #F9EBDE;
                 width: 100%;
                 /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
                 z-index: 1;
             }
 
             .links a {
-                color: black;
+                color: #403027;
                 padding: 20px 16px;
                 text-decoration: none;
                 display: block;
@@ -338,7 +431,10 @@ section{
 
             /* This 2 lines are responsible for the visibility
             of the DropDop menu after Hovering over it */
-            .links a:hover {background-color: #ddd;}
+            .links a:hover {
+                background-color: #f1d4bb;
+                font-weight: 700;
+            }
             .MenuContainer:hover .links {display: block;}
 
         /* End Menu */
@@ -387,7 +483,7 @@ section{
         height: 100vh;
     } */
 
-    /* main web */
+    /* main Mobile */
 
 
        .Section1, .Section2{
@@ -399,7 +495,7 @@ section{
         .DivImg{
             display: flex;
             height: fit-content;
-            background: rgb(21, 248, 0);
+            /* background: rgb(21, 248, 0); */
             align-items: center; 
             justify-content: center;
             /* height: 60%; */
@@ -413,7 +509,7 @@ section{
         .DivText{
             display: flex;
             /* padding: 150px 20px; */
-            background: rgb(230, 129, 214);
+            /* background: rgb(230, 129, 214); */
             font-size: 2rem;
             align-items: center; 
             justify-content: center;
@@ -421,14 +517,23 @@ section{
             width: 100%;
         }
     /* Main */
+
+
+    /* Footer */
+    footer > p{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 7%;
+        line-height: 2.5;
+    }
+
+    footer .CTAForm{
+        padding: 5% 7%;
+    }
+    /* Footer */
 }
-/* Media Query Start */
+/* Media Query END */
 
 
     
 
-
-
-
-
-        
