@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 
 }
@@ -78,16 +78,21 @@ footer{
         color: #403027;
     }
 
-    button{
+    .ProductTitle button{
         font-size: 30px;
         padding: 0.5em 3em;
-        border-radius: 8px;
+        /* border-radius: 8px; */
         background: transparent;
         border: #403027 solid;
         color: #403027;
         font-weight: 700;
         cursor: pointer;
     }
+    .ProductTitle button:hover{
+        background: #403027;
+        color: #F8EEE6;
+    }
+    
 
     header .ProductContainer .Product{
         /* background: lavenderblush; */
@@ -108,11 +113,20 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 7px 0;
+        padding: 5px 0;
     }
-
+    header .ArrowB a{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
     header .ArrowB img{
         height: 100%;
+        opacity: 0.5;
+    }
+    header .ArrowB img:active{
+        height: 90%;
+        opacity: 0.8;
     }
 
 /* header full page */
@@ -277,6 +291,7 @@ footer{
         padding: 12px 15px;
         /* display: inline-block; */
         border: 4px solid #F8EEE6;
+        color: #F8EEE6;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -303,9 +318,14 @@ footer{
         background-color: #F8EEE6;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #403027;
         letter-spacing: 2px;
+        cursor: pointer;
+    }
+    .CTAForm button:hover{
+        font-size: 2rem;
+        letter-spacing: 4px;
     }
    
 /* END Footer */
@@ -529,6 +549,10 @@ footer{
 
     footer .CTAForm{
         padding: 5% 7%;
+    }
+    .CTAForm button:hover{
+        font-size: 2rem;
+        letter-spacing: 4px;
     }
     /* Footer */
 }
