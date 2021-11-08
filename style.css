@@ -118,7 +118,11 @@ footer{
     header .ArrowB a{
         padding: 0;
         margin: 0;
-        height: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
     header .ArrowB img{
         height: 100%;
@@ -264,11 +268,12 @@ footer{
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
+        padding: 0 30%;
     }
     footer > p{
         font-size: 3rem;
         text-align: center;
-        padding: 0 30%;
+        padding: 0;
         margin: 0;
         line-height: 2;
         color: #F8EEE6;
@@ -279,7 +284,8 @@ footer{
         align-content: center;
         /* align-items: center; */
         width: 100%;
-        padding: 0 30%;
+        padding: 0;
+        background: #F9EBDE;
     }
     .CTAForm input{
         margin: 0px 0px;
@@ -359,29 +365,45 @@ footer{
         justify-content: center;
         text-align: center;
         width: 100%;
-        height: 30%;
+        height: 40%;
+        padding: 1rem;
     }
 
     header .ProductContainer .ProductTitle h1{
-        font-size: 20px;
+        font-size: 3rem;
         margin: 0;
         padding: 0 0 0 0;
     }
 
-    button{
-        font-size: 18px;
-        padding: 0.5em 3em;
-        border-radius: 8px;
+    header .ProductContainer .ProductTitle button{
+        font-size: 2rem;
+        padding: 0.5em;
+        /* border-radius: 8px; */
         background: transparent;
         border: #403027 solid;
         color: #403027;
-        font-weight: 700;
+        font-weight: 500;
+        width: 70%;
+        margin: 10px 0;
+    }
+    header .ProductContainer .ProductTitle button:hover{
+        background: #403027;
+        color: #F8EEE6;
     }
 
     header .ProductContainer .Product{
         /* background: rgb(211, 158, 175); */
         width: 100%;
+        height: 60%;
+    }
+    header .ArrowB a{
+        padding: 0;
+        margin: 0;
         height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
     /* Full Page */
 
@@ -530,7 +552,7 @@ footer{
             display: flex;
             /* padding: 150px 20px; */
             /* background: rgb(230, 129, 214); */
-            font-size: 2rem;
+            font-size: 2.2rem;
             align-items: center; 
             justify-content: center;
             flex: 1 1 auto;
@@ -540,6 +562,11 @@ footer{
 
 
     /* Footer */
+    footer{
+        padding: 0 7%;
+
+
+    }
     footer > p{
         font-size: 2.5rem;
         text-align: center;
@@ -548,7 +575,9 @@ footer{
     }
 
     footer .CTAForm{
-        padding: 5% 7%;
+        /* padding: 5% 7%; */
+        padding: 0;
+        background: #F9EBDE;
     }
     .CTAForm button:hover{
         font-size: 2rem;
