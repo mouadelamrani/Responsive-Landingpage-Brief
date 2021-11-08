@@ -129,9 +129,13 @@ footer{
         height: 100%;
         opacity: 0.5;
     }
+    header .ArrowB img:hover{
+        height: 90%;
+        opacity: 0.7;
+    }
     header .ArrowB img:active{
         height: 90%;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
 /* header full page */
