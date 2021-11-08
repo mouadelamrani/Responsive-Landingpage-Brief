@@ -432,18 +432,19 @@ footer{
         /* Menu */
             .MenuContainer {
                 /* position: relative; */
-                display: inline-block;
+                display: block;
+                padding: 8px;
             }
 
-            .Menu {
+            /* .Menu { */
                 /* background-color: #04AA6D; */
                 /* color: red; */
                 /* padding: 16px; */
-                font-size: 16px;
+                /* font-size: 16px;
                 border: none;
                 position: relative;
-                right: 0.7rem;
-            }
+                right: 0.7rem; */
+            /* } */
             .MenuIcon{
                 width: 100%;
                 padding: 16px;
