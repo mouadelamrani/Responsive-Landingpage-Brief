@@ -77,8 +77,8 @@ footer{
         padding: 0 0 1em 0;
         color: #403027;
     }
-
-    .ProductTitle button{
+    
+    .ProductTitle a{
         font-size: 30px;
         padding: 0.5em 3em;
         /* border-radius: 8px; */
@@ -87,12 +87,13 @@ footer{
         color: #403027;
         font-weight: 700;
         cursor: pointer;
+        text-decoration: none;
     }
-    .ProductTitle button:hover{
+    
+    .ProductTitle a:hover{
         background: #403027;
         color: #F8EEE6;
     }
-    
 
     header .ProductContainer .Product{
         /* background: lavenderblush; */
@@ -375,7 +376,7 @@ footer{
         padding: 0 0 0 0;
     }
 
-    header .ProductContainer .ProductTitle button{
+    header .ProductContainer .ProductTitle a{
         font-size: 2rem;
         padding: 0.5em;
         /* border-radius: 8px; */
@@ -386,7 +387,7 @@ footer{
         width: 70%;
         margin: 10px 0;
     }
-    header .ProductContainer .ProductTitle button:hover{
+    header .ProductContainer .ProductTitle a:hover{
         background: #403027;
         color: #F8EEE6;
     }
