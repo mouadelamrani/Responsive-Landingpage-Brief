@@ -9,7 +9,15 @@
 
 }
 
-main{
+html{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
     scroll-snap-align: start;
     background: #F8EEE6;
     width: 100%;
@@ -19,18 +27,13 @@ section{
     scroll-snap-align: start;
     background: #F8EEE6;
 }
-footer{
+
+main, footer{
     scroll-snap-align: start;
 }
 
 
-
-/* body{ */
-    /* background: yellow; */
-    /* background-image: url(https://www.ethnicmusical.com/wp-content/uploads/2020/08/background-pattern2.png); */
-/* } */
-
-/* header full page - I should complete the full page */
+/* header full page */
     header{
         /* background: red; */
         height: 100vh;
@@ -78,6 +81,10 @@ footer{
         padding: 0 0 1em 0;
         color: #403027;
     }
+    .OrderNowButton{
+        border: none;
+        background: none;
+    }
     
     .ProductTitle a{
         font-size: 30px;
@@ -115,26 +122,36 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px 0;
+        /* padding: 5px 0; */
     }
+
+    header .DownButton{
+        /* Button Test */
+        border: none;
+        background: transparent;
+        /* width: 100%; */
+        height: 110%;
+        /* Button Test */
+    }
+
     header .ArrowB a{
         padding: 0;
         margin: 0;
-        height: 70%;
+        height: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
         align-content: center;
     }
-    header .ArrowB img{
-        height: 100%;
+    header .ArrowB #DownArrImg{
+        height: 90%;
         opacity: 0.5;
     }
-    header .ArrowB img:hover{
-        height: 90%;
+    header .ArrowB .DownButton:hover, #DownArrImg:hover{
+        height: 100%;
         opacity: 0.7;
     }
-    header .ArrowB img:active{
+    header .ArrowB .DownButton:active, #DownArrImg:active{
         height: 90%;
         opacity: 0.9;
     }
@@ -198,7 +215,6 @@ footer{
         height: 100vh;
     }
 
-
     .DivImg{
         display: flex;
         width: 50%;
@@ -247,6 +263,7 @@ footer{
         flex-flow: row-reverse nowrap;
         /* flex-direction: row-reverse; */
         height: 100vh;
+
     }
 
     /* .CTA{
@@ -336,20 +353,16 @@ footer{
         cursor: pointer;
     }
     .CTAForm button:hover{
-        font-size: 2rem;
-        letter-spacing: 4px;
+        background-color: #f8e7da;
     }
    
 /* END Footer */
 
-        
-        
-        
-        /* -------------------------------------- */
-        /* -------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
 
 
-/* Media Query Start */
+/* Mobile Media Query Start */
 
 @media only screen and (max-width: 900px) {
 
@@ -493,44 +506,44 @@ footer{
 
 
     /* Main */
-    /* .Section1{
-        display: flex;
-        flex-flow: row wrap;
-        height: 100vh;
-    }
+        /* .Section1{
+            display: flex;
+            flex-flow: row wrap;
+            height: 100vh;
+        }
 
 
-    .DivImg{
-        display: flex;
-        width: 60%;
-        height: fit-content;
-        background: cadetblue;
-        font-size: 4rem;
-        align-items: center; 
-        justify-content: center;
-    }
-    img{
-        width: 100%;
-    }
+        .DivImg{
+            display: flex;
+            width: 60%;
+            height: fit-content;
+            background: cadetblue;
+            font-size: 4rem;
+            align-items: center; 
+            justify-content: center;
+        }
+        img{
+            width: 100%;
+        }
 
-    .DivText{
-        display: flex;
-        width: 40%;
-        background: cornflowerblue;
-        font-size: 4rem;
-        line-height: 3;
-        align-items: center; 
-        justify-content: center;
-        text-align: center;
-        padding: 0 40px;
-    }
+        .DivText{
+            display: flex;
+            width: 40%;
+            background: cornflowerblue;
+            font-size: 4rem;
+            line-height: 3;
+            align-items: center; 
+            justify-content: center;
+            text-align: center;
+            padding: 0 40px;
+        }
 
 
-    .Section2{
-        display: flex;
-        flex-direction: row-reverse;
-        height: 100vh;
-    } */
+        .Section2{
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100vh;
+        } */
 
     /* main Mobile */
 
@@ -592,8 +605,29 @@ footer{
     }
     /* Footer */
 }
-/* Media Query END */
+/* Mobile Media Query END */
 
 
-    
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
 
+
+/* Wide Screen Media Query */
+@media only screen and (min-width: 1950px) {
+    html{
+        scroll-snap-type: none;
+        scroll-behavior: none;
+        font-size: 15px;
+        /* background: #e9d8c8; */
+    }
+    body, main{
+        max-width: 1920px;
+    }
+    header, .Section1, .Section2, footer{
+        max-height: 1080px;
+    }
+    .CTAForm button{
+        font-size: 1.5rem;
+    }
+}
+/* Wide Screen Media Query */
