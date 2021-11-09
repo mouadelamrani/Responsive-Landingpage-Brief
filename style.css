@@ -12,6 +12,7 @@
 main{
     scroll-snap-align: start;
     background: #F8EEE6;
+    width: 100%;
 }
 
 section{
