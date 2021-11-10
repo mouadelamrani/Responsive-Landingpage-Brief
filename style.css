@@ -359,11 +359,13 @@ main, footer{
 
     footer #FooterCallIcon{
         color: #F9EBDE; 
+        opacity: 0.8;
         padding: 4rem 2rem 2rem 2rem;
     }
 
     footer #FooterCallIcon:hover{
-        color: #c48044;
+        color: #f8e7da;
+        opacity: 1;
     }
 
    
