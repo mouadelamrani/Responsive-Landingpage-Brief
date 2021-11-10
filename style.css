@@ -78,30 +78,31 @@ main, footer{
         font-size: 35px;
         line-height: 2;
         margin: 0;
-        padding: 0 0 1em 0;
+        padding: 0 0 1.2em 0;
         color: #403027;
     }
     .OrderNowButton{
         border: none;
         background: none;
-    }
-    
-    .ProductTitle a{
-        font-size: 30px;
+        cursor: pointer;
         padding: 0.5em 3em;
         /* border-radius: 8px; */
         background: transparent;
         border: #403027 solid;
-        color: #403027;
-        font-weight: 700;
+        padding: 0.5em 3em;
         cursor: pointer;
         text-decoration: none;
+        color: #403027;
+        font-size: 3rem;
+
     }
     
-    .ProductTitle a:hover{
+    
+    .ProductTitle .OrderNowButton:hover{
         background: #403027;
         color: #F8EEE6;
     }
+
 
     header .ProductContainer .Product{
         /* background: lavenderblush; */
@@ -340,13 +341,13 @@ main, footer{
         /* float: right; */
         height: 60px;
         width: 100%;
-        padding: 0px;
+        padding: 1rem 0;
         margin: 0;
         border: none;
         border-radius: 0px;
         background-color: #F8EEE6;
         text-transform: uppercase;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 2rem;
         color: #403027;
         letter-spacing: 2px;
@@ -355,6 +356,16 @@ main, footer{
     .CTAForm button:hover{
         background-color: #f8e7da;
     }
+
+    footer #FooterCallIcon{
+        color: #F9EBDE; 
+        padding: 4rem 2rem 2rem 2rem;
+    }
+
+    footer #FooterCallIcon:hover{
+        color: #c48044;
+    }
+
    
 /* END Footer */
 
@@ -385,30 +396,21 @@ main, footer{
         text-align: center;
         width: 100%;
         height: 40%;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     header .ProductContainer .ProductTitle h1{
         font-size: 3rem;
         margin: 0;
-        padding: 0 0 0 0;
+        padding: 0 0 0.8em 0;
     }
 
-    header .ProductContainer .ProductTitle a{
-        font-size: 2rem;
-        padding: 0.5em;
-        /* border-radius: 8px; */
-        background: transparent;
-        border: #403027 solid;
-        color: #403027;
-        font-weight: 500;
-        width: 70%;
-        margin: 10px 0;
+    
+    header .ProductContainer .ProductTitle .OrderNowButton{
+        padding: 0.5em 2.5em;
+        font-size: 2em;
     }
-    header .ProductContainer .ProductTitle a:hover{
-        background: #403027;
-        color: #F8EEE6;
-    }
+
 
     header .ProductContainer .Product{
         /* background: rgb(211, 158, 175); */
@@ -504,47 +506,6 @@ main, footer{
     /* NavBar */
 
 
-
-    /* Main */
-        /* .Section1{
-            display: flex;
-            flex-flow: row wrap;
-            height: 100vh;
-        }
-
-
-        .DivImg{
-            display: flex;
-            width: 60%;
-            height: fit-content;
-            background: cadetblue;
-            font-size: 4rem;
-            align-items: center; 
-            justify-content: center;
-        }
-        img{
-            width: 100%;
-        }
-
-        .DivText{
-            display: flex;
-            width: 40%;
-            background: cornflowerblue;
-            font-size: 4rem;
-            line-height: 3;
-            align-items: center; 
-            justify-content: center;
-            text-align: center;
-            padding: 0 40px;
-        }
-
-
-        .Section2{
-            display: flex;
-            flex-direction: row-reverse;
-            height: 100vh;
-        } */
-
     /* main Mobile */
 
 
@@ -584,9 +545,8 @@ main, footer{
     /* Footer */
     footer{
         padding: 0 7%;
-
-
     }
+
     footer > p{
         font-size: 2.5rem;
         text-align: center;
@@ -599,9 +559,16 @@ main, footer{
         padding: 0;
         background: #F9EBDE;
     }
+    .CTAForm button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        height: fit-content;
+    }
+
     .CTAForm button:hover{
         font-size: 2rem;
-        letter-spacing: 4px;
     }
     /* Footer */
 }
@@ -627,7 +594,9 @@ main, footer{
         max-height: 1080px;
     }
     .CTAForm button{
+
         font-size: 1.5rem;
+        
     }
 }
 /* Wide Screen Media Query */
